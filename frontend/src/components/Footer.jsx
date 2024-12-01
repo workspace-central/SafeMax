@@ -38,7 +38,7 @@ export default function Footer() {
       <h3 className="font-nunito">Reach Us</h3>
       <ul>
         <li>
-          <i className="fas fa-map-marker-alt font-nunito"></i> First Floor, Survey No. 79, Kothrud, Pune, Maharashtra, India - 411038
+          <i className="fas fa-map-marker-alt font-nunito"></i> First Floor, Survey No. 79, Kothrud, Pune, Maharashtra, India - 411038.
         </li>
         <li>
           <i className="fas fa-envelope font-nunito"></i> support@safemaxsecurity.services
