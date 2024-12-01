@@ -8,6 +8,5 @@ export default function App() {
       <LandingPage />
       <Footer />
     </div>
-    
   )
 }
