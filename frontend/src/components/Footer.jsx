@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "../Footer.css";
 import logo from "../assets/safemax_logo.svg"
 
 <footer className="footer">
