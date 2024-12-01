@@ -1,5 +1,6 @@
 import { features } from "../components/CardDetails"
 import Testimonials from "../components/Testimonials"
+import WorldMap from "../components/WorldMap";
 
 export default function LandingPage() {
   return (
@@ -172,6 +173,12 @@ export default function LandingPage() {
 
       <div className='h-24'></div>
 
+      <section className="bg-[#2e2f2e]">
+          <div className="max-w-full mx-auto">
+            <WorldMap />
+          </div>
+        </section>
+
       <section>
       <Testimonials/>
       </section>
@@ -179,3 +186,6 @@ export default function LandingPage() {
   </div>
   );
 }
+
+//i want to exempt the worlmap component from having the left and right paddings
+//i want to keep the left and right paddings for the other components in the page
