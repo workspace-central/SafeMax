@@ -169,9 +169,13 @@ export default function LandingPage() {
 ))}
 </div>
       </section>
-      <div className='h-24'></div>
-      <Testimonials/>
 
+      <div className='h-24'></div>
+
+      <section>
+      <Testimonials/>
+      </section>
+      
     </div>
   </div>
   );
