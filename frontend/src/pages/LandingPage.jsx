@@ -173,7 +173,7 @@ export default function LandingPage() {
 
       <div className='h-24'></div>
 
-      <section className="bg-[#2e2f2e]">
+      <section className="bg-[#2e2f2e] -mx-4 sm:-mx-6 lg:-mx-8">
           <div className="max-w-full mx-auto">
             <WorldMap />
           </div>
