@@ -1,4 +1,5 @@
 import { features } from "../components/CardDetails"
+import Testimonials from "../components/Testimonials"
 
 export default function LandingPage() {
   return (
@@ -168,6 +169,9 @@ export default function LandingPage() {
 ))}
 </div>
       </section>
+      <div className='h-24'></div>
+      <Testimonials/>
+
     </div>
   </div>
   );
