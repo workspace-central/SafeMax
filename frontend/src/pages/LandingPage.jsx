@@ -186,6 +186,3 @@ export default function LandingPage() {
   </div>
   );
 }
-
-//i want to exempt the worlmap component from having the left and right paddings
-//i want to keep the left and right paddings for the other components in the page
