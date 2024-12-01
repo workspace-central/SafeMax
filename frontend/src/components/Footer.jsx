@@ -1,6 +1,8 @@
 import "./Footer.css";
 import logo from "../assets/safemax_logo.svg"
 
+export default function Footer() {
+  return (
 <footer className="footer">
 <div className="footer-container">
   <div className="footer-top">
@@ -52,4 +54,5 @@ import logo from "../assets/safemax_logo.svg"
   </div>
 </div>
 </footer>
-
+  )
+}

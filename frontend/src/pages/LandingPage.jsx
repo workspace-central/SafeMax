@@ -1,5 +1,6 @@
 import { features } from "../components/CardDetails"
 import Testimonials from "../components/Testimonials"
+import {Footer} from "../components/Footer";
 
 export default function LandingPage() {
   return (
@@ -175,7 +176,7 @@ export default function LandingPage() {
       <section>
       <Testimonials/>
       </section>
-      
+
     </div>
   </div>
   );
