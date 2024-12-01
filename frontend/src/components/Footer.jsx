@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "../Footer.css";
 import logo from "../assets/safemax_logo.svg"
 
 export default function Footer() {
