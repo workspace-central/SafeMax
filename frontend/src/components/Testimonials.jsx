@@ -3,22 +3,22 @@ import { motion } from "framer-motion"
 const testimonials = [
   {
     title: "Unmatched in Proactive Defense",
-    content: "VRV Security has redefined cybersecurity for us. Their proactive threat monitoring has significantly reduced potential vulnerabilities, and their team's expertise is unmatched. We feel secure knowing they're constantly one step ahead.",
+    content: "SafeMax Security has redefined cybersecurity for us. Their proactive threat monitoring has significantly reduced potential vulnerabilities, and their team's expertise is unmatched. We feel secure knowing they're constantly one step ahead.",
     author: "CIO, Global Financial Services Firm"
   },
   {
     title: "A Trusted Partner in Security",
-    content: "With VRV Security, we have a reliable partner we can count on. Their deep industry knowledge and 24/7 monitoring give us the peace of mind to focus on our core business. They've consistently exceeded our expectations.",
+    content: "With SafeMax Security, we have a reliable partner we can count on. Their deep industry knowledge and 24/7 monitoring give us the peace of mind to focus on our core business. They've consistently exceeded our expectations.",
     author: "CTO, Fortune 500 Tech Company"
   },
   {
     title: "Swift Response, Exceptional Expertise",
-    content: "VRV Security's SOC team responded quickly during a critical threat event, demonstrating exceptional expertise. Their swift actions saved us from potential data breaches and ensured our systems stayed resilient.",
+    content: "SafeMax Security's SOC team responded quickly during a critical threat event, demonstrating exceptional expertise. Their swift actions saved us from potential data breaches and ensured our systems stayed resilient.",
     author: "Head of IT, Healthcare Provider"
   },
   {
     title: "Innovation Meets Reliability",
-    content: "VRV Security has become integral to our infrastructure. Their innovative AI-driven solutions and managed VAPT services have transformed our cybersecurity. We're confident we have the best defenses in place.",
+    content: "SafeMax Security has become integral to our infrastructure. Their innovative AI-driven solutions and managed VAPT services have transformed our cybersecurity. We're confident we have the best defenses in place.",
     author: "CISO, Leading Retail Chain"
   }
 ]

@@ -35,22 +35,27 @@ export default function Footer() {
     </div>
 
     <div className="footer-contact">
-      <h3 className="font-nunito">Reach Us</h3>
-      <ul>
-        <li>
-          <i className="fas fa-map-marker-alt font-nunito"></i> First Floor, Survey No. 79, Kothrud, Pune, Maharashtra, India - 411038.
-        </li>
-        <li>
-          <i className="fas fa-envelope font-nunito"></i> support@safemaxsecurity.services
-        </li>
-        <li>
-          <i className="fab fa-linkedin font-nunito"></i>{" "}
-          <a href="https://www.linkedin.com/company/safemax-security/" target="_blank" rel="noopener noreferrer">
-            https://www.linkedin.com/company/safemax-security/
-          </a>
-        </li>
-      </ul>
-    </div>
+   <h3 className="font-nunito">Reach Us</h3>
+   <ul>
+     <li>
+       <i className="fas fa-map-marker-alt font-nunito"></i> 
+       First Floor, Survey No. 79, Kothrud, Pune, Maharashtra, India - 411038.
+     </li>
+     <li>
+       <i className="fas fa-envelope font-nunito"></i> 
+       <a href="mailto:support@safemaxsecurity.services">
+         support@safemaxsecurity.services
+       </a>
+     </li>
+     <li>
+       <i className="fab fa-linkedin font-nunito"></i> 
+       <a href="https://www.linkedin.com/company/safemax-security/" target="_blank" rel="noopener noreferrer">
+         LinkedIn
+       </a>
+     </li>
+   </ul>
+ </div>
+
   </div>
 </div>
 </footer>

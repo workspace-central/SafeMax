@@ -16,7 +16,7 @@ export default function LandingPage() {
         </div>
         <div>
           <p className="text-[#888987] font-semibold font-nunito text-lg leading-relaxed">
-            Founded in 2020 in Chennai, SafeMax Security is committed to
+            Founded in 2020, SafeMax Security is committed to
             empowering businesses by building resilient digital infrastructures.
             With a focus on precision, proactive threat hunting, and adaptive
             security measures, we safeguard sensitive data and critical systems
