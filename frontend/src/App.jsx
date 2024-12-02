@@ -1,4 +1,3 @@
-import './App.css';
 import LandingPage from './pages/LandingPage';
 import Footer from './components/Footer';
 import '@fortawesome/fontawesome-free/css/all.min.css';
