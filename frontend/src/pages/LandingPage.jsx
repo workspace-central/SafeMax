@@ -1,7 +1,7 @@
 import { features } from "../components/CardDetails"
 import Testimonials from "../components/Testimonials"
 import WorldMap from "../components/WorldMap";
-import FloatingComponent from "../components/floatingcomponent";
+import FloatingComponent from "../components/FloatingComponent";
 
 export default function LandingPage() {
   return (
