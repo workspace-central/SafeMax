@@ -1,6 +1,7 @@
 import { features } from "../components/CardDetails"
 import Testimonials from "../components/Testimonials"
 import WorldMap from "../components/WorldMap";
+import FloatingComponent from "../components/floatingcomponent";
 
 export default function LandingPage() {
   return (
@@ -9,11 +10,15 @@ export default function LandingPage() {
       <section>
       <div className="grid lg:grid-cols-2 gap-12 mb-20">
         <div>
+          <FloatingComponent>
           <h1 className="text-5xl font-montserrat font-bold text-[#2E2F2E]">
             Securing the Future,{" "}
             <span className="block text-[#FF6812] font-semibold">Globally</span>
           </h1>
+          </FloatingComponent>
+          
         </div>
+        <FloatingComponent>
         <div>
           <p className="text-[#888987] font-semibold font-nunito text-lg leading-relaxed">
             Founded in 2020, SafeMax Security is committed to
@@ -23,8 +28,10 @@ export default function LandingPage() {
             against ever-evolving cyber threats.
           </p>
         </div>
+        </FloatingComponent>
+        
       </div>
-
+      <FloatingComponent>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-[#2E2F2E] rounded-3xl p-8 text-white flex flex-col justify-between h-full">
           <div>
@@ -127,12 +134,15 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+      </FloatingComponent>
+      
       </section>
 
       <div className='h-24'></div>
       
       <section>
-      <div className="grid lg:grid-cols-2 gap-12 mb-20">
+        <FloatingComponent>
+        <div className="grid lg:grid-cols-2 gap-12 mb-20">
         <div>
           <h1 className="text-5xl font-montserrat font-bold text-[#2E2F2E]">
             <span className="block text-[#FF6812] font-semibold">Key Features </span>
@@ -145,13 +155,15 @@ export default function LandingPage() {
           </p>
         </div>
       </div>
-
+        </FloatingComponent>
+      
+      <FloatingComponent>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-{features.map((feature, index) => (
-  <div
-    key={index}
-    className="border bg-[#FCF7F0] bg-card rounded-2xl p-6 transition-colors duration-300 hover:bg-[#2E2F2E] group relative"
-  >
+        {features.map((feature, index) => (
+        <div
+          key={index}
+          className="border bg-[#FCF7F0] bg-card rounded-2xl p-6 transition-colors duration-300 hover:bg-[#2E2F2E] group relative"
+        >
     <div className="mb-24 relative h-12 w-12 ">
       <div className="absolute inset-0 opacity-100 group-hover:opacity-0 transition-opacity duration-300">
         {feature.defaultSvg}
@@ -169,18 +181,25 @@ export default function LandingPage() {
   </div>
 ))}
 </div>
+      </FloatingComponent>
+      
       </section>
 
       <div className='h-24'></div>
 
       <section className="bg-[#2e2f2e] -mx-4 sm:-mx-6 lg:-mx-8">
           <div className="max-w-full mx-auto">
+            <FloatingComponent>
             <WorldMap />
+            </FloatingComponent>
           </div>
         </section>
 
       <section>
-      <Testimonials/>
+        <FloatingComponent>
+        <Testimonials/>
+        </FloatingComponent>
+      
       </section>
     </div>
   </div>
