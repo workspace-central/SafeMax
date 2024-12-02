@@ -8,17 +8,14 @@ export default function LandingPage() {
     <div className="min-h-screen bg-[#FFFFFF] py-16 px-4 sm:px-6 lg:px-8">
     <div className="max-w-7xl mx-auto">
       <section>
-      <div className="grid lg:grid-cols-2 gap-12 mb-20">
+        <FloatingComponent>
+        <div className="grid lg:grid-cols-2 gap-12 mb-20">
         <div>
-          <FloatingComponent>
           <h1 className="text-5xl font-montserrat font-bold text-[#2E2F2E]">
             Securing the Future,{" "}
             <span className="block text-[#FF6812] font-semibold">Globally</span>
           </h1>
-          </FloatingComponent>
-          
         </div>
-        <FloatingComponent>
         <div>
           <p className="text-[#888987] font-semibold font-nunito text-lg leading-relaxed">
             Founded in 2020, SafeMax Security is committed to
@@ -27,10 +24,10 @@ export default function LandingPage() {
             security measures, we safeguard sensitive data and critical systems
             against ever-evolving cyber threats.
           </p>
-        </div>
-        </FloatingComponent>
-        
+        </div>        
       </div>
+        </FloatingComponent>
+      
       <FloatingComponent>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-[#2E2F2E] rounded-3xl p-8 text-white flex flex-col justify-between h-full">
