@@ -1,25 +1,38 @@
 import { motion } from "framer-motion"
+import joa from "../assets/joa.png"
+import amit from "../assets/amit.png"
+import anand from "../assets/anand.png"
+import pan from "../assets/pan.png"
+
 
 const testimonials = [
   {
-    title: "Unmatched in Proactive Defense",
-    content: "SafeMax Security has redefined cybersecurity for us. Their proactive threat monitoring has significantly reduced potential vulnerabilities, and their team's expertise is unmatched. We feel secure knowing they're constantly one step ahead.",
-    author: "CIO, Global Financial Services Firm"
+    title: "Industrial Control Systems Security and VAPT",
+    content: "SafeMax's expertise in industrial control systems security was invaluable. Their thorough VAPT assessments identified critical vulnerabilities in our SCADA systems, allowing us to proactively address potential threats and ensure the safety of our operations.",
+    cmp: "L&T Technology Services",
+    author: "Amit Chadha (CEO, MD)",
+    img: {amit}
   },
   {
-    title: "A Trusted Partner in Security",
-    content: "With SafeMax Security, we have a reliable partner we can count on. Their deep industry knowledge and 24/7 monitoring give us the peace of mind to focus on our core business. They've consistently exceeded our expectations.",
-    author: "CTO, Fortune 500 Tech Company"
+    title: "Secure Software Development Lifecycle",
+    content: "SafeMax's SDLC implementation services have significantly improved our software development process. By seamlessly integrating security into every phase, we've effectively reduced the risk of security breaches and ensured the timely delivery of secure applications.",
+    cmp: "Persistent Systems",
+    author: "Anand Deshpande (Chairman and MD)",
+    img: {anand}
   },
   {
     title: "Swift Response, Exceptional Expertise",
-    content: "SafeMax Security's SOC team responded quickly during a critical threat event, demonstrating exceptional expertise. Their swift actions saved us from potential data breaches and ensured our systems stayed resilient.",
-    author: "Head of IT, Healthcare Provider"
+    content: "Their rapid incident response services were instrumental in containing a recent cyberattack. SafeMax's team swiftly assessed the situation, implemented effective mitigation strategies, and minimized the impact on our business.",
+    cmp: "Frasers Property",
+    author: "Panote Sirivadhanabhakdi (CEO)",
+    img: {pan}
   },
   {
     title: "Innovation Meets Reliability",
-    content: "SafeMax Security has become integral to our infrastructure. Their innovative AI-driven solutions and managed VAPT services have transformed our cybersecurity. We're confident we have the best defenses in place.",
-    author: "CISO, Leading Retail Chain"
+    content: "Their comprehensive incident response planning has given us confidence in our ability to respond effectively to security incidents. SafeMax's guidance has helped us develop a robust incident response plan that minimizes downtime and financial loss.",
+    cmp: "Sartorius AG",
+    author: "Joachim Kreuzburg (CEO and Executive Board Chair)",
+    img: {joa}
   }
 ]
 
@@ -34,7 +47,7 @@ const containerVariants = {
 }
 
 const cardVariants = {
-  hidden: { 
+  hidden: {
     opacity: 0,
     y: 20
   },
@@ -49,7 +62,7 @@ const cardVariants = {
 }
 
 const quoteVariants = {
-  hidden: { 
+  hidden: {
     opacity: 0,
     scale: 0.5
   },
@@ -75,7 +88,7 @@ export default function Testimonials() {
         </h2>
       </div>
 
-      <motion.div 
+      <motion.div
         className="grid md:grid-cols-2 gap-8"
         variants={containerVariants}
         initial="hidden"
@@ -85,7 +98,7 @@ export default function Testimonials() {
           <motion.div
             key={index}
             variants={cardVariants}
-            whileHover={{ 
+            whileHover={{
               scale: 1.03,
               boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
               transition: { duration: 0.3 }
@@ -105,12 +118,28 @@ export default function Testimonials() {
               <p className="text-gray-600 mb-6 leading-relaxed text-sm">
                 {testimonial.content}
               </p>
-              <p className="text-xs text-gray-500 font-medium text-right">
+              {/* <p className="text-xs text-gray-500 font-medium text-right">
                 — {testimonial.author}
-              </p>
+              </p> */}
+            </div>
+            <div className="flex items-center justify-end">
+              <div className="flex flex-col text-xs text-gray-500 font-medium justify-end items-end">
+                <p className="text-gray-900 text-base">{testimonial.author}</p>
+                <p>{testimonial.cmp}</p>
+              </div>
+              <img
+                src={testimonial.img}
+                alt={testimonial.author}
+                className="w-10 h-10 rounded-full ml-4"
+              />
             </div>
           </motion.div>
+
         ))}
+
+
+
+
       </motion.div>
     </section>
   )
