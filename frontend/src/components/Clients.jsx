@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import cyient from "../assets/cyient.png";
 import threei from "../assets/threei.png";
 import kpit from "../assets/kpit.png";
