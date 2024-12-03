@@ -75,7 +75,7 @@ const ImageCarousel = () => {
                 height: "150px", 
                 margin: "0 auto",
                 borderRadius: "8px",
-                objectFit: "contain", 
+                objectFit: "contain",   
                 paddingLeft: "10px",
                 paddingRight: "10px",
             }}
