@@ -64,6 +64,7 @@ const ImageCarousel = () => {
   ];
 
   return (
+
     <div className="carousel-container" style={{ margin: "20px 0" }}>
       <Slider {...settings}>
         {images.map((image, index) => (

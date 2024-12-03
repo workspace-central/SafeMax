@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import { motion } from 'framer-motion';
 import React from 'react';
 
+// eslint-disable-next-line react/prop-types
 const FloatingComponent = ({ children }) => {
     return (
         <motion.div

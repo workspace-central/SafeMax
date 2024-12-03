@@ -6,9 +6,10 @@ import Clients from "../components/Clients";
 
 export default function LandingPage() {
   return (
+  
     <div className="min-h-screen bg-[#FFFFFF] py-16 px-4 sm:px-6 lg:px-8">
     <div className="max-w-7xl mx-auto">
-      <section>
+      <section id="about">
         <FloatingComponent>
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
         <div>
@@ -140,7 +141,7 @@ export default function LandingPage() {
       
       <section>
         <FloatingComponent>
-        <div className="grid lg:grid-cols-2 gap-12 mb-20">
+        <div id="services"className="grid lg:grid-cols-2 gap-12 mb-20">
         <div>
           <h1 className="text-5xl font-montserrat font-bold text-[#2E2F2E]">
             <span className="block text-[#FF6812] font-semibold">Key Features </span>

@@ -1,7 +1,41 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
+  const [activeLink, setActiveLink] = useState("#home");
+
+  // Scroll to specific section or top of the page
+  const scrollToSection = (id) => {
+    const section = document.querySelector(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setActiveLink(id); // Update active link state
+  };
+
+  useEffect(() => {
+    scrollToSection("#home");
+  }, []);
+
+  const handleScroll = () => {
+    const sections = ["#home", "#services", "#about", "#contact"];
+    let currentSection = "#home";
+    
+    sections.forEach((section) => {
+      const element = document.querySelector(section);
+      if (element && window.scrollY >= element.offsetTop - 100) {
+        currentSection = section;
+      }
+    });
+
+    setActiveLink(currentSection); // Update active section
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <header role="banner" className="relative h-screen text-white">
       <video
@@ -14,69 +48,65 @@ const Header = () => {
         preload="auto"
       ></video>
 
-      {/* Content */}
-      <div className="relative z-10 px-6 py-4 h-full flex flex-col ">
-        {/* Navbar */}
+      <div className="relative z-10 px-6 py-4 h-full flex flex-col">
         <nav
           role="navigation"
           aria-label="Main navigation"
           className="container mx-auto flex items-center justify-between"
         >
-          {/* Logo */}
           <a
             href="#home"
             aria-label="Navigate to Home Section"
-            className="cursor-pointer"
+            className={`cursor-pointer ${activeLink === "#home" ? "text-orange-400" : ""}`}
+            onClick={() => scrollToSection("#home")}
           >
             <img
               src="/logo.png"
               alt="SafeMax Security Logo - Cybersecurity Solutions"
-              className="flex justify-center  h-full w-30 mx-11 "
+              className="flex justify-center h-full w-30"
             />
           </a>
 
-          {/* Navigation Links */}
-          <ul className="flex-grow hidden md:flex justify-center space-x-20 text-xl">
+          <ul className="flex-grow hidden md:flex justify-end space-x-20 text-xl">
             <li>
-              <a
-                href="#home"
+              <button
+                onClick={() => scrollToSection("#home")}
                 aria-label="Go to Home Section"
-                className="hover:text-orange-400 transition duration-200"
+                className={`hover:text-orange-400 transition duration-200 ${activeLink === "#home" ? "text-orange-400" : ""}`}
               >
                 Home
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#service"
+              <button
+                onClick={() => scrollToSection("#services")}
                 aria-label="Explore Our Services"
-                className="hover:text-orange-400 transition duration-200"
+                className={`hover:text-orange-400 transition duration-200 ${activeLink === "#services" ? "text-orange-400" : ""}`}
               >
-                Service
-              </a>
+                Services
+              </button>
             </li>
             <li>
-              <a
-                href="#about"
+              <button
+                onClick={() => scrollToSection("#about")}
                 aria-label="Learn About Us"
-                className="hover:text-orange-400 transition duration-200"
+                className={`hover:text-orange-400 transition duration-200 ${activeLink === "#about" ? "text-orange-400" : ""}`}
               >
                 About Us
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#contact"
-                aria-label="Contact Us"
-                className="hover:text-orange-400 transition duration-200"
+              <button
+                onClick={() => scrollToSection("#contact")}
+                aria-label="Scroll to Contact Us Section"
+                className={`hover:text-orange-400 transition duration-200 ${activeLink === "#contact" ? "text-orange-400" : ""}`}
               >
                 Contact Us
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
 
-        {/* Hero Section */}
         <main
           role="main"
           className="flex-grow flex flex-col items-center justify-center text-center"
