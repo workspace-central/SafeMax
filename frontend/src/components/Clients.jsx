@@ -72,12 +72,12 @@ const ImageCarousel = () => {
               alt={image.alt}
               style={{
                 width: "auto",
-                height: "150px", 
+                height: "100px", 
                 margin: "0 auto",
                 borderRadius: "8px",
                 objectFit: "contain",   
-                paddingLeft: "10px",
-                paddingRight: "10px",
+                paddingLeft: "20px",
+                paddingRight: "20px",
             }}
             />
           </div>
