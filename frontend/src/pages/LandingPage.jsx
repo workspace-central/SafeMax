@@ -198,6 +198,7 @@ export default function LandingPage() {
           <Clients></Clients>
           </FloatingComponent>
         </section>
+        
       <section>
         <FloatingComponent>
         <Testimonials/>
