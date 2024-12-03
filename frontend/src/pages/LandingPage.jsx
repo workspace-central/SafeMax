@@ -2,6 +2,7 @@ import { features } from "../components/CardDetails"
 import Testimonials from "../components/Testimonials"
 import WorldMap from "../components/WorldMap";
 import FloatingComponent from "../components/FloatingComponent";
+import Clients from "../components/Clients";
 
 export default function LandingPage() {
   return (
@@ -192,11 +193,15 @@ export default function LandingPage() {
           </div>
         </section>
 
+        <section>
+          <FloatingComponent>
+          <Clients></Clients>
+          </FloatingComponent>
+        </section>
       <section>
         <FloatingComponent>
         <Testimonials/>
         </FloatingComponent>
-      
       </section>
     </div>
   </div>

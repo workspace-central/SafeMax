@@ -11,3 +11,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.carousel-container {
+    overflow: hidden; /* Ensures slides don't overflow the container */
+    width: 100%;      /* Adjust container width */
+    margin: auto;
+  }
+  
+  .slick-slide img {
+    display: block;
+    width: 100%; /* Ensure images scale properly */
+    height: auto;
+  }
+  
