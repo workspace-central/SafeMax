@@ -68,7 +68,7 @@ export default function Testimonials() {
     <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto bg-white font-sans">
       <div className="mb-16">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
-          Here's What our
+          Here&apos;s What our
         </h2>
         <h2 className="text-4xl md:text-5xl font-bold text-[#FF5C00]">
           Customers Are Saying
@@ -96,7 +96,7 @@ export default function Testimonials() {
               variants={quoteVariants}
               className="absolute right-8 top-8 text-[#FF5C00] text-8xl font-serif"
             >
-              "
+              &quot;
             </motion.div>
             <div className="relative z-10">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">

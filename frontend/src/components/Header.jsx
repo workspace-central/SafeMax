@@ -4,7 +4,6 @@ import React from "react";
 const Header = () => {
   return (
     <header role="banner" className="relative h-screen text-white">
-      {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
         src="/bg.mp4"
@@ -16,7 +15,7 @@ const Header = () => {
       ></video>
 
       {/* Content */}
-      <div className="relative z-10 px-6 py-4 h-full flex flex-col">
+      <div className="relative z-10 px-6 py-4 h-full flex flex-col ">
         {/* Navbar */}
         <nav
           role="navigation"
@@ -32,7 +31,7 @@ const Header = () => {
             <img
               src="/logo.png"
               alt="SafeMax Security Logo - Cybersecurity Solutions"
-              className="h-12 w-30 ml-11"
+              className="flex justify-center  h-full w-30 mx-11 "
             />
           </a>
 
