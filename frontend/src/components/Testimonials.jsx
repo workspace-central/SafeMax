@@ -11,28 +11,28 @@ const testimonials = [
     content: "SafeMax's expertise in industrial control systems security was invaluable. Their thorough VAPT assessments identified critical vulnerabilities in our SCADA systems, allowing us to proactively address potential threats and ensure the safety of our operations.",
     cmp: "L&T Technology Services",
     author: "Amit Chadha (CEO, MD)",
-    img: {amit}
+    img: amit
   },
   {
     title: "Secure Software Development Lifecycle",
     content: "SafeMax's SDLC implementation services have significantly improved our software development process. By seamlessly integrating security into every phase, we've effectively reduced the risk of security breaches and ensured the timely delivery of secure applications.",
     cmp: "Persistent Systems",
     author: "Anand Deshpande (Chairman and MD)",
-    img: {anand}
+    img: anand
   },
   {
     title: "Swift Response, Exceptional Expertise",
     content: "Their rapid incident response services were instrumental in containing a recent cyberattack. SafeMax's team swiftly assessed the situation, implemented effective mitigation strategies, and minimized the impact on our business.",
     cmp: "Frasers Property",
     author: "Panote Sirivadhanabhakdi (CEO)",
-    img: {pan}
+    img: pan
   },
   {
     title: "Innovation Meets Reliability",
     content: "Their comprehensive incident response planning has given us confidence in our ability to respond effectively to security incidents. SafeMax's guidance has helped us develop a robust incident response plan that minimizes downtime and financial loss.",
     cmp: "Sartorius AG",
     author: "Joachim Kreuzburg (CEO and Executive Board Chair)",
-    img: {joa}
+    img: joa
   }
 ]
 
