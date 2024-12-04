@@ -3,14 +3,15 @@ import React, { useEffect, useState } from "react";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("#home");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Scroll to specific section or top of the page
   const scrollToSection = (id) => {
     const section = document.querySelector(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-    setActiveLink(id); // Update active link state
+    setActiveLink(id);
+    setIsMenuOpen(false); // Close menu on selection
   };
 
   useEffect(() => {
@@ -20,7 +21,7 @@ const Header = () => {
   const handleScroll = () => {
     const sections = ["#home", "#services", "#about", "#contact"];
     let currentSection = "#home";
-    
+
     sections.forEach((section) => {
       const element = document.querySelector(section);
       if (element && window.scrollY >= element.offsetTop - 100) {
@@ -28,7 +29,7 @@ const Header = () => {
       }
     });
 
-    setActiveLink(currentSection); // Update active section
+    setActiveLink(currentSection);
   };
 
   useEffect(() => {
@@ -57,62 +58,47 @@ const Header = () => {
           <a
             href="#home"
             aria-label="Navigate to Home Section"
-            className={`cursor-pointer ${activeLink === "#home" ? "text-orange-400" : ""}`}
+            className="cursor-pointer"
             onClick={() => scrollToSection("#home")}
           >
             <img
               src="/logo.png"
               alt="SafeMax Security Logo - Cybersecurity Solutions"
-              className="flex justify-center h-full w-30"
+              className="h-10 w-auto"
             />
           </a>
 
-          <ul className="flex-grow hidden md:flex justify-end space-x-20 text-xl">
-            <li>
-              <button
-                onClick={() => scrollToSection("#home")}
-                aria-label="Go to Home Section"
-                className={`hover:text-orange-400 transition duration-200 ${activeLink === "#home" ? "text-orange-400" : ""}`}
-              >
-                Home
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => scrollToSection("#client")}
-                aria-label="Go to Clients Section"
-                className={`hover:text-orange-400 transition duration-200 ${activeLink === "#client" ? "text-orange-400" : ""}`}
-              >
-                Clients
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => scrollToSection("#services")}
-                aria-label="Explore Our Services"
-                className={`hover:text-orange-400 transition duration-200 ${activeLink === "#services" ? "text-orange-400" : ""}`}
-              >
-                Services
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => scrollToSection("#about")}
-                aria-label="Learn About Us"
-                className={`hover:text-orange-400 transition duration-200 ${activeLink === "#about" ? "text-orange-400" : ""}`}
-              >
-                About Us
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => scrollToSection("#contact")}
-                aria-label="Scroll to Contact Us Section"
-                className={`hover:text-orange-400 transition duration-200 ${activeLink === "#contact" ? "text-orange-400" : ""}`}
-              >
-                Contact Us
-              </button>
-            </li>
+          {/* Hamburger Menu */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden text-3xl text-white focus:outline-none ml-4"
+            aria-label="Toggle Navigation Menu"
+          >
+            ☰
+          </button>
+
+          {/* Navigation Links */}
+          <ul
+            className={`${
+              isMenuOpen ? "flex" : "hidden"
+            } md:flex flex-col md:flex-row justify-end md:space-x-20 text-xl absolute md:relative top-16 md:top-0 left-0 md:left-auto w-full md:w-auto bg-black md:bg-transparent p-4 md:p-0`}
+          >
+            {["#home", "#client", "#services", "#about", "#contact"].map(
+              (id, index) => (
+                <li key={index} className="mb-4 md:mb-0">
+                  <button
+                    onClick={() => scrollToSection(id)}
+                    aria-label={`Navigate to ${id.replace("#", "").toUpperCase()} Section`}
+                    className={`hover:text-orange-400 transition duration-200 ${
+                      activeLink === id ? "text-orange-400" : ""
+                    }`}
+                  >
+                    {id.replace("#", "").charAt(0).toUpperCase() +
+                      id.replace("#", "").slice(1)}
+                  </button>
+                </li>
+              )
+            )}
           </ul>
         </nav>
 
@@ -120,20 +106,20 @@ const Header = () => {
           role="main"
           className="flex-grow flex flex-col items-center justify-center text-center"
         >
-          <h1 className="text-6xl md:text-7xl font-bold leading-snug text-white">
+          <h1 className="text-4xl md:text-7xl font-bold leading-snug text-white">
             Innovating <span className="text-orange-400">Cybersecurity</span>
             <br />
             Securing Your <span className="text-orange-400">Future</span>
           </h1>
 
-          <p className="text-base md:text-2xl text-gray-300 mt-4">
+          <p className="text-sm md:text-2xl text-gray-300 mt-4">
             Empowering Enterprises with Next-Generation Cyber Defense.
           </p>
 
           <a
             href="mailto:support@safemaxsecurity.services"
             aria-label="Get Started with SafeMax Security"
-            className="mt-6 px-12 py-3 text-2xl bg-orange-400 text-white font-bold rounded-full hover:bg-orange-500 transition duration-200 hover:scale-110 hover:shadow-lg"
+            className="mt-6 px-8 md:px-12 py-3 text-lg md:text-2xl bg-orange-400 text-white font-bold rounded-full hover:bg-orange-500 transition duration-200 hover:scale-110 hover:shadow-lg"
           >
             Get Started
           </a>
