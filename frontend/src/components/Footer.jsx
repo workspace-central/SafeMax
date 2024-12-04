@@ -39,11 +39,7 @@ export default function Footer() {
                   Services
                 </a>
               </li>
-              <li>
-                <a href="#careers" className="font-nunito">
-                  Careers
-                </a>
-              </li>
+             
             </ul>
           </div>
 
