@@ -10,7 +10,11 @@ export default function Footer() {
             <span>Fight Fraud and Safely</span> Onboard <br />
             Customers with a Powerful Platform
           </h1>
-          <button className="get-started-btn">Get Started</button>
+          <button className="get-started-btn">
+           <a href="mailto:support@safemaxsecurity.services">
+                  Get Started
+                </a>
+          </button>
         </div>
 
         <hr className="footer-divider" />
