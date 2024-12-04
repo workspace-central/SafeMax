@@ -79,6 +79,15 @@ const Header = () => {
             </li>
             <li>
               <button
+                onClick={() => scrollToSection("#client")}
+                aria-label="Go to Clients Section"
+                className={`hover:text-orange-400 transition duration-200 ${activeLink === "#client" ? "text-orange-400" : ""}`}
+              >
+                Clients
+              </button>
+            </li>
+            <li>
+              <button
                 onClick={() => scrollToSection("#services")}
                 aria-label="Explore Our Services"
                 className={`hover:text-orange-400 transition duration-200 ${activeLink === "#services" ? "text-orange-400" : ""}`}
@@ -122,7 +131,7 @@ const Header = () => {
           </p>
 
           <a
-            href="#get-started"
+            href="mailto:support@safemaxsecurity.services"
             aria-label="Get Started with SafeMax Security"
             className="mt-6 px-12 py-3 text-2xl bg-orange-400 text-white font-bold rounded-full hover:bg-orange-500 transition duration-200 hover:scale-110 hover:shadow-lg"
           >
