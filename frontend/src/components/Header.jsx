@@ -64,7 +64,7 @@ const Header = () => {
             <img
               src="/logo.png"
               alt="SafeMax Security Logo - Cybersecurity Solutions"
-              className="h-10 w-auto"
+              className="h-56px w-169px gap-11px"
             />
           </a>
 
@@ -77,11 +77,10 @@ const Header = () => {
             ☰
           </button>
 
-          {/* Navigation Links */}
           <ul
             className={`${
               isMenuOpen ? "flex" : "hidden"
-            } md:flex flex-col md:flex-row justify-end md:space-x-20 text-xl absolute md:relative top-16 md:top-0 left-0 md:left-auto w-full md:w-auto bg-black md:bg-transparent p-4 md:p-0`}
+            } md:flex flex-col md:flex-row justify-end md:space-x-20 text-xl font-nunito font-semibold text-[20px] text-[#E6E7E6] absolute md:relative top-16 md:top-0 left-0 md:left-auto w-full md:w-auto bg-black md:bg-transparent p-4 md:p-0 md:gap-x-120`}
           >
             {["#home", "#client", "#services", "#about", "#contact"].map(
               (id, index) => (
@@ -106,20 +105,20 @@ const Header = () => {
           role="main"
           className="flex-grow flex flex-col items-center justify-center text-center"
         >
-          <h1 className="text-4xl md:text-7xl font-bold leading-snug text-white">
-            Innovating <span className="text-orange-400">Cybersecurity</span>
+          <h1 className="text-76px md:text-7xl font-montserrat font-bold leading-snug text-[#F7E9D7]">
+            Innovating <span className="text-[#FF6812]">Cybersecurity</span>
             <br />
-            Securing Your <span className="text-orange-400">Future</span>
+            Securing Your <span className="text-[#FF6812]">Future</span>
           </h1>
 
-          <p className="text-sm md:text-2xl text-gray-300 mt-4">
+          <p className="font-nunito-sans font-semibold text-2xl md:text-4xl text-white text-opacity-300 mt-4">
             Empowering Enterprises with Next-Generation Cyber Defense.
           </p>
 
           <a
             href="mailto:support@safemaxsecurity.services"
             aria-label="Get Started with SafeMax Security"
-            className="mt-6 px-8 md:px-12 py-3 text-lg md:text-2xl bg-orange-400 text-white font-bold rounded-full hover:bg-orange-500 transition duration-200 hover:scale-110 hover:shadow-lg"
+            className="mt-6 px-8 md:px-12 py-3 text-lg md:text-2xl font-bold text-[#F7E9D7] bg-[#FF6812] rounded-[16px] transition duration-200 hover:scale-110 hover:shadow-lg w-[313px] h-[64px] hover:bg-black"
           >
             Get Started
           </a>
