@@ -82,7 +82,7 @@ const Header = () => {
               isMenuOpen ? "flex" : "hidden"
             } md:flex flex-col md:flex-row justify-end md:space-x-20 text-xl font-nunito font-semibold text-[20px] text-[#E6E7E6] absolute md:relative top-16 md:top-0 left-0 md:left-auto w-full md:w-auto bg-black md:bg-transparent p-4 md:p-0 md:gap-x-120`}
           >
-            {["#home", "#client", "#services", "#about", "#contact"].map(
+            {["#home", "#clients", "#services", "#about Us", "#contact Us"].map(
               (id, index) => (
                 <li key={index} className="mb-4 md:mb-0">
                   <button
