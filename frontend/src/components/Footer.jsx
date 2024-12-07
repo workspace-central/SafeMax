@@ -1,5 +1,8 @@
 import "../Footer.css";
-import logo from "../assets/safemax_logo.svg";
+import logo from "../assets/SafemaxLogo.svg";
+import mappinarea from "../assets/MapPinArea.svg";
+import email from "../assets/Gmail.svg";
+import linkedin from "../assets/Linkedin.svg";
 
 export default function Footer() {
   return (
@@ -47,27 +50,36 @@ export default function Footer() {
           <div className="footer-contact">
             <h3 className="font-nunito"><b>Reach Us</b></h3>
             <ul>
-              <li>
-                <i className="fas fa-map-marker-alt font-nunito"></i>
-                First Floor, Survey No. 79, Kothrud, Pune, Maharashtra, India - 411038.
+              <li className="font-nunito">
+                <i>
+                <img src={mappinarea}></img>
+                 </i>
+
+                <font className="font-nunito">First Floor, Survey No. 79, Kothrud, Pune, Maharashtra, India - 411038.</font>
               </li>
               <li>
-                <i className="fas fa-envelope font-nunito"></i>
-                <a href="mailto:support@safemaxsecurity.services">
+                <i>
+                
+                <img style={{position:"relative",top:"15px"}} src={email}></img>
+                </i>
+                <a className="font-nunito" href="mailto:support@safemaxsecurity.services">
                   support@safemaxsecurity.services
                 </a>
               </li>
               <li>
-                <i className="fab fa-linkedin font-nunito"></i>
-                <a
+                <i>
+               <img style={{position:"relative",top:"10px"}} src={linkedin}></img>
+</i>
+                <a  className="font-nunito"
                   href="https://www.linkedin.com/company/safemax-security/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  
                 >
                   https://www.linkedin.com/company/safemax-security/
                 </a>
               </li>
             </ul>
+            
           </div>
         </div>
       </div>
