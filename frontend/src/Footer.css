@@ -1,9 +1,11 @@
 .footer {
     background-color: #2e2e2e;
-    color: #ffffff;
+    color: #FCF7F0;
     padding: 40px 20px;
-    font-family: "Arial", sans-serif;
+   
     position: relative;
+    
+    
 }
 
 .footer-container {
@@ -12,6 +14,7 @@
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 30px;
 }
 
 .footer-top {
@@ -24,28 +27,33 @@
 }
 
 .footer-heading {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 50px;
+    font-weight: bold;
     line-height: 1.5;
     animation: fadeIn 2s ease-in-out;
+     
 }
 
 .footer-heading span {
-    color: #f2632f;
+    color: #FF6812;
     
 }
 
 .get-started-btn {
-    background-color: #f2632f;
-    color: #ffffff;
+    background-color: #FF6812;
+    color:#F7E9D7;
     padding: 15px 24px;
-    width: 250px;
+    width: 313px;
+    height: 64px;
     border: none;
-    border-radius: 10px;
-    font-size: 18px;
+    border-radius: 16px;
+    font-size: 20px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-family:'Nunito Sans';
+    
 }
 
 .get-started-btn:hover {
@@ -56,11 +64,11 @@
 .footer-divider {
     border: none;
     height: 2px;
-    background: #e76637;
+    background: #FF6812;
     margin: 20px 0;
     animation: fadeIn 1.5s ease-out;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .footer-bottom {
@@ -78,22 +86,29 @@
 }
 
 .logo-image {
-    width: 250px;
+    width: 338.59px;
+    height: 113px;
     padding-top: 20px;
 }
+
 
 .footer-logo h2 {
     font-size: 28px;
     font-weight: 700;
 }
 
+
+
 .footer-links h3,
 .footer-contact h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 25px;
+   margin-bottom: 15px;
     align-items: center;
-    color: white;
+    color:  #FCF7F0;
     transition: color 0.3s ease;
+    font-family: 'Montserrat';
+    
+   
 }
 
 .footer-links ul,
@@ -101,44 +116,51 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: small;
+    font-size: 16px;
     
 }
 .footer h3{
     padding-top: 10px;
+    padding-bottom: 15px;
 }
 .footer-links ul li {
-    padding-top: 15px;
+    padding-bottom: 20px;
 }
 .footer-links a:hover{
-    color: #f2632f;
+    color: #FF6812;
 }
+
 
 
 .footer-contact ul li {
     display: flex;
-    align-items: flex-start; /* Aligns the icon and text at the top */
-    gap: 10px; /* Adds space between the icon and text */
-    font-size:xx-small;
-    color:azure;
-    margin-bottom: 10px; /* Adds spacing between list items */
-    font-size: small;
-    padding-top: 10px;
+    align-items: center; /* Ensures icons and text are vertically aligned */
+    gap: 20px; /* Adjust space between icon and text as needed */
+    color: #FCF7F0;
+    font-size: 16px;
 }
 
 .footer-contact ul li i {
     flex-shrink: 0; /* Prevents the icon from resizing */
     font-size: 25px; /* Adjust icon size as needed */
-    margin-right: 5px; /* Adds space between icon and text */
-    color: white;
-    padding-top: 5px;
+    color: #FCF7F0;
+    width: 30px; /* Remove fixed width to let icons size naturally */
+    height: 30px; /* Remove fixed height */
 }
+
+
+
+
+
+
 
 .footer-contact ul li a {
     color: #ffffff;
-    text-decoration: none;
-    word-wrap: break-word; /* Ensures long links wrap properly */
-    flex: 1; /* Allows the text to take up remaining space */
+    padding-top: 20px;
+    word-wrap:normal; /* Ensures long links wrap properly */
+   
+    width: 260px;
+    word-wrap: break-word;
 }
 
 
@@ -171,7 +193,9 @@
         padding: 0;
     }
     .footer-contact{
-        width: 280px;
+        width: 328px;
+        height: 223px;
+       
     }
 
     .footer-links ul li,
@@ -198,10 +222,7 @@
         font-size: 35px;
     }
 
-    .footer-links
-     {
-        padding-top: 10px;
-    }
+    
 }
 
 /* Mobile View */
@@ -242,7 +263,8 @@
     }
 
     .logo-image {
-        width: 100px;
+        width: 338px;
+        height: 113px;
     }
 
     .footer-heading {
@@ -263,3 +285,11 @@
         opacity: 1;
     }
 }
+
+.font-nunito {
+  font-family: 'Nunito', sans-serif,;
+}
+
+
+
+
