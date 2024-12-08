@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+import React from "react";
 import cyient from "../assets/cyient.png";
 import threei from "../assets/threei.png";
 import kpit from "../assets/kpit.png";
@@ -11,43 +11,9 @@ import mastek from "../assets/mastek.png";
 import hexaware from "../assets/hexaware.png";
 import firstsource from "../assets/firstsource.png";
 import landt from "../assets/l&t.png";
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "../assets/ImageCarousal.css"; // External CSS file for styling
 
 const ImageCarousel = () => {
-  const settings = {
-    dots: true, 
-    infinite: true,
-    speed: 1500, 
-    slidesToShow: 4, 
-    slidesToScroll: 1, 
-    autoplay: true, 
-    autoplaySpeed: 1000, 
-    responsive: [
-      {
-        breakpoint: 1024, 
-        settings: {
-          slidesToShow: 3, 
-        },
-      },
-      {
-        breakpoint: 768, 
-        settings: {
-          slidesToShow: 2, 
-        },
-      },
-      {
-        breakpoint: 480, 
-        settings: {
-          slidesToShow: 1, 
-        },
-      },
-    ],
-    arrows: false, 
-  };
-
   const images = [
     { src: cyient, alt: "Cyient" },
     { src: threei, alt: "3i Infotech" },
@@ -64,27 +30,22 @@ const ImageCarousel = () => {
   ];
 
   return (
-
-    <div id = "client" className="carousel-container" style={{ margin: "20px 0" }}>
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index} className="carousel-slide">
-            <img
-              src={image.src}
-              alt={image.alt}
-              style={{
-                width: "auto",
-                height: "100px", 
+    <div id="client" className="carousel-container">
+      <div className="carousel-track mt-[75px]">
+        {images.concat(images).map((image, index) => (
+          <div key={index} className="carousel-item">
+            <img src={image.src} alt={image.alt} style={{
+                width: "250px",
+                height: "250px", 
                 margin: "0 auto",
                 borderRadius: "8px",
                 objectFit: "contain",   
                 paddingLeft: "20px",
                 paddingRight: "20px",
-            }}
-            />
+            }}/>
           </div>
         ))}
-      </Slider>
+      </div>
     </div>
   );
 };

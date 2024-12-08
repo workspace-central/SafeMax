@@ -3,8 +3,7 @@ import React from "react";
 
 const WorldMap = () => {
   return (
-    <div className="flex flex-col items-center bg-[#2E2F2E] text-white w-full p-10 rounded-[30px]">
-      {/* Text Section */}
+    <div className="flex flex-col items-center bg-[#2E2F2E] text-white w-full p-10 rounded-[30px] mt-[200px]">
       <div className="flex flex-col items-center text-center w-full px-4 md:px-8">
         <h1 className="font-montserrat text-[36px] md:text-[48px] lg:text-[60px] font-bold leading-[40px] md:leading-[60px] lg:leading-[73px] text-white">
           Trusted <span className="text-[#FF6812]">Worldwide</span>
@@ -19,7 +18,6 @@ const WorldMap = () => {
         </p>
       </div>
 
-      {/* Image Section */}
       <div className="relative w-full flex justify-center items-center mt-8 md:mt-12 px-4">
         <img
           src="wordmap.png" 
