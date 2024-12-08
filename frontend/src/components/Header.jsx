@@ -41,7 +41,7 @@ const Header = () => {
     <header role="banner" className="relative h-screen text-white">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-        src="/bg.mp4"
+        src="/HeaderVideo.mp4"
         autoPlay
         loop
         muted
