@@ -2,7 +2,7 @@ import FloatingComponent from "./FloatingComponent"
 
 export default function Securing(){
     return(
-        <div className=" w-full h-full bg-[#FFFEFE] ">
+        <section id="about" className=" w-full h-full bg-[#FFFEFE] ">
       <div className="mx-[205px] mt-[150px]">
         <FloatingComponent>
         <div className="grid grid-cols-12 gap-[32px]">
@@ -128,6 +128,6 @@ export default function Securing(){
     
         
       </div>
-      </div>
+      </section>
     )
 }

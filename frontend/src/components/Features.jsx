@@ -3,7 +3,7 @@ import FloatingComponent from "./FloatingComponent";
 
 export default function Features() {
     return (
-        <div className="w-full h-full bg-[#FFFEFE]">
+        <section id="services" className="w-full h-full bg-[#FFFEFE]">
             <div className="mx-[205px] mt-[150px]">
                 <FloatingComponent>
                     <div className="grid lg:grid-cols-12 gap-[32px]">
@@ -41,6 +41,6 @@ export default function Features() {
                     </div>
                 </FloatingComponent>
             </div>
-        </div>
+        </section>
     );
 }

@@ -30,7 +30,7 @@ const ImageCarousel = () => {
   ];
 
   return (
-    <div id="client" className="carousel-container">
+    <div id="clients" className="carousel-container">
       <div className="carousel-track mt-[75px]">
         {images.concat(images).map((image, index) => (
           <div key={index} className="carousel-item">
