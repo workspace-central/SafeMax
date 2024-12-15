@@ -12,7 +12,7 @@ export default function Securing(){
             </h1>
             <div className="col-span-1"></div>
           <p className="text-[#888987] col-span-6 font-semibold font-nunito text-custom-24 leading-custom-30">
-            Founded in 2020 in Chennai, SafeMax Security is committed to
+            Founded in 2020 in Pune, SafeMax Security is committed to
             empowering businesses by building resilient digital infrastructures.
             With a focus on precision, proactive threat hunting, and adaptive
             security measures, we safeguard sensitive data and critical systems
